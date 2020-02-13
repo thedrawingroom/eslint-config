@@ -4,7 +4,7 @@ Copyright (c) 2012 Airbnb
 
 Copyright (c) 2017 Just Eat Holding Ltd
 
-Copyright (c) 2020 Lee Millward
+Copyright (c) 2020 The Drawing Room
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
