@@ -3,6 +3,12 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## v1.0.2
+
+_February 13 2020_
+
+-   Enforce no space before named function opening paranthesis.
+
 ## v1.0.0
 
 _February 12 2020_
