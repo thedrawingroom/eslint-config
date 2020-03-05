@@ -21,23 +21,9 @@ module.exports = {
 
         'dot-location': ['error', 'property'],
 
-        'global-require': 'off',
-
         'function-call-argument-newline': 'off',
 
-        // enforces spacing between keys and values in object literal properties
-        'key-spacing': [
-            'error',
-            {
-                beforeColon: false,
-                afterColon: true,
-                mode: 'minimum'
-            }
-        ],
-
-        'linebreak-style': ['error', 'unix'],
-
-        'lines-around-comments': 'off',
+        'global-require': 'off',
 
         indent: [
             'error',
@@ -59,6 +45,20 @@ module.exports = {
                 }
             }
         ],
+
+        // enforces spacing between keys and values in object literal properties
+        'key-spacing': [
+            'error',
+            {
+                beforeColon: false,
+                afterColon: true,
+                mode: 'minimum'
+            }
+        ],
+
+        'linebreak-style': ['error', 'unix'],
+
+        'lines-around-comments': 'off',
 
         // specify the maximum length of a line in your program
         // http://eslint.org/docs/rules/max-len
@@ -96,11 +96,11 @@ module.exports = {
             }
         ],
 
-        'no-tabs': 'error',
-
         // Allow use of unary operators, ++ and --
         // http://eslint.org/docs/rules/no-plusplus
         'no-plusplus': 'off',
+
+        'no-tabs': 'error',
 
         // disallow dangling underscores in identifiers
         'no-underscore-dangle': 'off',
@@ -126,6 +126,8 @@ module.exports = {
             }
         ],
 
+        'semi-style': ['error', 'last'],
+
         // require or disallow space before function opening parenthesis
         // http://eslint.org/docs/rules/space-before-function-paren
         'space-before-function-paren': [
@@ -136,8 +138,6 @@ module.exports = {
                 asyncArrow: 'always'
             }
         ],
-
-        'semi-style': ['error', 'last'],
 
         // require or disallow a space immediately following
         // the // or /* in a comment

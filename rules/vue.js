@@ -2,7 +2,10 @@ module.exports = {
     rules: {
         'vue/array-bracket-spacing': ['error', 'never'],
 
-        'vue/arrow-spacing': ['error', { before: true, after: true }],
+        'vue/arrow-spacing': ['error', {
+            before: true,
+            after: true
+        }],
 
         'vue/block-spacing': ['error', 'always'],
 
@@ -108,24 +111,24 @@ module.exports = {
         'vue/no-restricted-syntax': [
             'error',
             {
-                selector: 'ForInStatement',
                 message:
-                    'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.'
+                    'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+                selector: 'ForInStatement'
             },
             {
-                selector: 'ForOfStatement',
                 message:
-                    'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.'
+                    'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
+                selector: 'ForOfStatement'
             },
             {
-                selector: 'LabeledStatement',
                 message:
-                    'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.'
+                    'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+                selector: 'LabeledStatement'
             },
             {
-                selector: 'WithStatement',
                 message:
-                    '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.'
+                    '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+                selector: 'WithStatement'
             }
         ],
 
@@ -137,11 +140,15 @@ module.exports = {
 
         'vue/object-curly-spacing': ['error', 'always'],
 
+        'vue/padding-line-between-blocks': 'error',
+
         'vue/require-direct-export': 'off',
 
         'vue/require-name-property': 'error',
 
         'vue/script-indent': 'off',
+
+        'vue/sort-keys': 'off',
 
         'vue/space-infix-ops': 'error',
 
@@ -150,8 +157,8 @@ module.exports = {
         'vue/space-unary-ops': [
             'error',
             {
-                words: true,
-                nonwords: false
+                nonwords: false,
+                words: true
             }
         ],
 
