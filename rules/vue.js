@@ -68,13 +68,7 @@ module.exports = {
             }
         ],
 
-        'vue/match-component-file-name': [
-            'error',
-            {
-                extensions: ['js', 'jsx', 'ts', 'tsx', 'vue'],
-                shouldMatchCase: false
-            }
-        ],
+        'vue/match-component-file-name': 'off',
 
         'vue/max-len': [
             'error',
@@ -144,7 +138,7 @@ module.exports = {
 
         'vue/require-direct-export': 'off',
 
-        'vue/require-name-property': 'error',
+        'vue/require-name-property': 'off',
 
         'vue/script-indent': 'off',
 
